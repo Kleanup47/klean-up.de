@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Klean-Up Cleaning Company</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f1f1f1;
+      color: #222;
+    }
+    header {
+      background: #1d1d1d;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-style: italic;
+      color: #ccc;
+    }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background: white;
+      padding: 2rem;
+    }
+    .hero img {
+      max-width: 300px;
+      margin: 1rem;
+      border-radius: 10px;
+    }
+    .why-us, .services, .contact {
+      padding: 2rem;
+      background: white;
+      margin: 1rem auto;
+      max-width: 900px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #1d1d1d;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li::before {
+      content: "✓ ";
+      color: green;
+      margin-right: 0.5rem;
+    }
+    .contact form {
+      display: grid;
+      gap: 1rem;
+    }
+    input, textarea {
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    button {
+      padding: 1rem;
+      background: #1d1d1d;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    footer {
+      background: #1d1d1d;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Klean-Up</h1>
+    <p>— Cleaning Company —</p>
+  </header>
+
+  <section class="hero">
+    <img src="images/window-cleaning.jpg" alt="Fensterreinigung">
+    <img src="images/home-cleaning.jpg" alt="Haushaltsreinigung">
+    <img src="images/office-cleaning.jpg" alt="Büroreinigung">
+  </section>
+
+  <section class="why-us">
+    <h2>Warum wir?</h2>
+    <ul>
+      <li>Umweltfreundliche Reinigungsmittel</li>
+      <li>Flexible Terminvereinbarungen</li>
+      <li>Faire Preise und transparente Kosten</li>
+    </ul>
+  </section>
+
+  <section class="services">
+    <h2>Unsere Dienstleistungen:</h2>
+    <ul>
+      <li>Büroreinigung / Praxisreinigung</li>
+      <li>Treppenreinigung</li>
+      <li>Grundreinigung</li>
+      <li>Haushaltsreinigung</li>
+      <li>Rolladen Reinigung</li>
+      <li>Dachrinnen Reinigung</li>
+      <li>Fenster / Glas Reinigung</li>
+      <li>Pool Reinigung</li>
+      <li>Solarreinigung</li>
+      <li>Fassadenreinigung</li>
+      <li>Terrassen Reinigung</li>
+      <li>Umzugs- sowie Bauendreinigung</li>
+      <li>Entrümpelung</li>
+      <li>... und vieles mehr</li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h2>Kontaktieren Sie uns</h2>
+    <form action="mailto:info@klean-up.de" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Ihr Name" required>
+      <input type="email" name="email" placeholder="Ihre E-Mail" required>
+      <textarea name="message" rows="5" placeholder="Ihre Nachricht..." required></textarea>
+      <button type="submit">Absenden</button>
+    </form>
+    <p>Telefon: <strong>0163 8312482</strong><br>
+       E-Mail: <strong>info@klean-up.de</strong></p>
+  </section>
+
+  <footer>
+    © 2025 Klean-Up Cleaning Company – Alle Rechte vorbehalten
+  </footer>
+</body>
+</html>
